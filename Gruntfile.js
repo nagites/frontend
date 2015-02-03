@@ -101,6 +101,10 @@ module.exports = function (grunt) {
         'compile:conf'
     ]);
 
+    grunt.registerTask('prepare', ['jspm']);
+
+    grunt.registerTask('jspm', ['shell:jspmFaciaTool']);
+
     /**
      * compile:js:<requiretask> tasks. Generate one for each require task
      */
