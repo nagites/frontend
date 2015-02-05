@@ -152,6 +152,12 @@
                 <input type="checkbox" data-bind="
                     checked: meta.uneditable" />
 
+                <label>Something for apps</label>
+                <select data-bind="options: props.optionsForThatThing,
+                    optionsCaption: 'None of them...',
+                    value: meta.somethingAppy,
+                    valueAllowUnset: true"></select>
+
                 <div class="tools">
                     <button class="tool" data-bind="
                         click: save">Save container</button>
